@@ -32,7 +32,7 @@ def parentesisAnidados(cadena:str)->bool:
         continuar, correcto = False, False
     
     if continuar:
-        while i<n:
+        while i<n and correcto:
             if (cadena[i]=="(" or cadena[i]=="[" or cadena[i]=="{"):
                 stack.append(cadena[i]) #Implementation of PUSH method
             else:
@@ -43,10 +43,10 @@ def parentesisAnidados(cadena:str)->bool:
                     
                     stack.pop() #Implementation of POP method
                 else:
-                    continuar, correcto = False, False
+                    correcto = False
             i += 1
-    
-    if len(stack)!=0:
-        correcto = False
         
+        if len(stack)!=0:
+            correcto = False
+
     return correcto

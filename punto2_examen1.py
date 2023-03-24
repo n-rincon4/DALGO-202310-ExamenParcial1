@@ -23,13 +23,12 @@ def kunico(S:list, k:int)->bool:
         
     """
     i = 0
-    continuar, unico = True, True
-    if continuar:
-        while i<len(S):
-            j = 1
-            while j<=k and j+i<len(S):
-                if S[i] == S[i+j]:
-                    continuar, unico = False, False
-                j += 1
-            i += 1
+    unico = True
+    while i<len(S):
+        j = 1
+        while j<=k and j+i<len(S) and unico:
+            if S[i] == S[i+j]:
+                unico = False
+            j += 1
+        i += 1
     return unico
