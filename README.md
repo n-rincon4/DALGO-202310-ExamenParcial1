@@ -1,2 +1,3 @@
-# DALGO-202310-ExamenParcial1
+# Examen Parcial 1 - Diseño y Análisis de Algoritmos
+Nicolás Rincón Sánchez - 202021963
 Documentos relacionados con la corrección del Parcial #1 de Diseño y Análisis de Algoritmos (2023-10)
